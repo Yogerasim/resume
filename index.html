@@ -4,373 +4,211 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Philip Gerasimov — iOS Developer</title>
-<meta name="description" content="Philip Gerasimov — iOS Developer. Swift, SwiftUI, UIKit, AVFoundation, Metal, MVVM, CoreData, REST API.">
 
 <style>
-:root{
-  --bg:#f3f4f6;
-  --card:#ffffff;
-  --text:#111827;
-  --muted:#4b5563;
-  --line:#e5e7eb;
-  --accent:#2563eb;
-}
-
-*{
-  box-sizing:border-box;
-}
 
 body{
-  margin:0;
-  background:var(--bg);
-  color:var(--text);
-  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Roboto,Arial,sans-serif;
-  line-height:1.55;
+font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Roboto,Arial,sans-serif;
+margin:0;
+background:#f5f7fb;
+color:#111;
 }
 
-.page{
-  max-width:920px;
-  margin:24px auto;
-  background:var(--card);
-  padding:44px 48px 56px;
-  box-shadow:0 12px 30px rgba(0,0,0,.08);
+.container{
+max-width:900px;
+margin:auto;
+background:white;
+padding:48px;
+box-shadow:0 20px 50px rgba(0,0,0,.1);
 }
 
 .header{
-  display:flex;
-  gap:22px;
-  align-items:center;
-  padding-bottom:24px;
-  border-bottom:1px solid var(--line);
+display:flex;
+gap:24px;
+align-items:center;
+margin-bottom:32px;
+border-bottom:1px solid #eee;
+padding-bottom:24px;
 }
 
 .avatar{
-  width:92px;
-  height:92px;
-  border-radius:50%;
-  object-fit:cover;
-  flex-shrink:0;
+width:90px;
+height:90px;
+border-radius:50%;
 }
 
-.header-main{
-  flex:1;
-}
-
-.name{
-  font-size:34px;
-  font-weight:800;
-  letter-spacing:-0.02em;
-  margin:0;
+h1{
+margin:0;
+font-size:34px;
 }
 
 .role{
-  margin-top:4px;
-  color:var(--accent);
-  font-weight:700;
-  font-size:18px;
+color:#2563eb;
+font-weight:600;
+margin-top:4px;
 }
 
-.contacts{
-  margin-top:10px;
-  color:var(--muted);
-  font-size:14px;
-}
-
-.contacts a{
-  color:var(--accent);
-  text-decoration:none;
-}
-
-.contacts a:hover{
-  text-decoration:underline;
+.links{
+margin-top:10px;
+font-size:14px;
 }
 
 .section{
-  margin-top:28px;
+margin-top:30px;
 }
 
-.section-title{
-  font-size:14px;
-  font-weight:800;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  color:var(--accent);
-  margin:0 0 12px;
+.section h2{
+font-size:18px;
+border-bottom:2px solid #eee;
+padding-bottom:6px;
+margin-bottom:12px;
 }
 
-.summary{
-  font-size:16px;
-  color:#1f2937;
+.job{
+margin-bottom:20px;
 }
 
-.skills-grid{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:10px 28px;
+.job-title{
+font-weight:700;
 }
 
-.skill-group{
-  font-size:15px;
-}
-
-.skill-group strong{
-  color:#111827;
-}
-
-.entry{
-  margin-top:18px;
-}
-
-.entry-head{
-  display:flex;
-  justify-content:space-between;
-  gap:16px;
-  align-items:flex-start;
-}
-
-.entry-title{
-  font-weight:800;
-  font-size:17px;
-}
-
-.entry-subtitle{
-  color:var(--muted);
-  margin-top:2px;
-  font-size:14px;
-}
-
-.entry-date{
-  color:var(--muted);
-  font-size:14px;
-  white-space:nowrap;
+.date{
+color:#666;
+font-size:14px;
 }
 
 ul{
-  margin:10px 0 0 18px;
-  padding:0;
+margin-top:6px;
 }
 
-li{
-  margin:6px 0;
-}
-
-.project{
-  margin-top:14px;
-}
-
-.project-name{
-  font-weight:800;
-}
-
-.footer-note{
-  margin-top:24px;
-  color:var(--muted);
-  font-size:13px;
-}
-
-@media (max-width: 760px){
-  .page{
-    margin:0;
-    padding:28px 20px 36px;
-    box-shadow:none;
-  }
-
-  .header{
-    flex-direction:column;
-    align-items:flex-start;
-  }
-
-  .entry-head{
-    flex-direction:column;
-  }
-
-  .entry-date{
-    white-space:normal;
-  }
-
-  .skills-grid{
-    grid-template-columns:1fr;
-  }
-}
 </style>
 </head>
+
 <body>
-  <main class="page">
 
-    <header class="header">
-      <img class="avatar" src="https://github.com/Yogerasim.png" alt="Philip Gerasimov avatar">
-      <div class="header-main">
-        <h1 class="name">Philip Gerasimov</h1>
-        <div class="role">iOS Developer</div>
-        <div class="contacts">
-          Saint Petersburg, Russia · Open to relocation and hybrid/remote roles<br>
-          Email: <a href="mailto:yogerrasim@yandex.ru">yogerrasim@yandex.ru</a> ·
-          Telegram: <a href="https://t.me/philip_gerasim" target="_blank" rel="noopener noreferrer">@philip_gerasim</a> ·
-          GitHub: <a href="https://github.com/Yogerasim" target="_blank" rel="noopener noreferrer">github.com/Yogerasim</a> ·
-          Portfolio: <a href="https://yogerasim.github.io/portfolio/" target="_blank" rel="noopener noreferrer">yogerasim.github.io/portfolio</a> ·
-          LinkedIn: <a href="https://www.linkedin.com/in/philip-gerasim-267a16283/" target="_blank" rel="noopener noreferrer">linkedin.com/in/philip-gerasim-267a16283</a>
-        </div>
-      </div>
-    </header>
+<div class="container">
 
-    <section class="section">
-      <h2 class="section-title">Summary</h2>
-      <div class="summary">
-        iOS Developer with commercial and project-based experience building mobile applications, shipping releases to the App Store, and working across the full product cycle: architecture, UI, networking, testing, and release. Strong focus on Swift, UIKit, SwiftUI, mobile architecture, and interactive graphics-driven applications. Particularly interested in camera systems, AVFoundation, Metal, performance, and product development from idea to production.
-      </div>
-    </section>
+<div class="header">
 
-    <section class="section">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-group"><strong>Languages & Core:</strong> Swift, Objective-C interop, JSON, REST API</div>
-        <div class="skill-group"><strong>UI & Architecture:</strong> UIKit, SwiftUI, MVC, MVVM, modular feature structure</div>
-        <div class="skill-group"><strong>Apple Frameworks:</strong> AVFoundation, CoreMedia, CoreVideo, CoreData, Combine</div>
-        <div class="skill-group"><strong>Graphics & Media:</strong> Metal, real-time rendering, camera pipelines, multimedia systems</div>
-        <div class="skill-group"><strong>Networking & Data:</strong> URLSession, API integration, async flows, decoding, persistence</div>
-        <div class="skill-group"><strong>Tools:</strong> Xcode, Git, App Store Connect, TouchDesigner</div>
-        <div class="skill-group"><strong>Product Skills:</strong> release preparation, debugging, UI implementation, feature ownership</div>
-        <div class="skill-group"><strong>Soft Skills:</strong> communication, product thinking, fast learning, teamwork, ownership</div>
-      </div>
-    </section>
+<img class="avatar" src="https://github.com/Yogerasim.png">
 
-    <section class="section">
-      <h2 class="section-title">Experience</h2>
+<div>
 
-      <div class="entry">
-        <div class="entry-head">
-          <div>
-            <div class="entry-title">Mobile Developer — Project-based Work</div>
-            <div class="entry-subtitle">eto-digital · Saint Petersburg · Digital products / interactive solutions</div>
-          </div>
-          <div class="entry-date">Jan 2020 — Present</div>
-        </div>
-        <ul>
-          <li>Develop iOS applications using Swift, UIKit, and SwiftUI.</li>
-          <li>Design and evolve app architecture using MVC and MVVM patterns.</li>
-          <li>Integrate REST APIs, implement networking layers, and process JSON responses.</li>
-          <li>Build custom UI components and interactive user flows for production applications.</li>
-          <li>Work with multimedia and hardware-connected solutions in real time.</li>
-          <li>Prepare builds and support publishing workflows in App Store Connect.</li>
-          <li>Participated in the release of multiple mobile applications that successfully passed App Store review.</li>
-        </ul>
-      </div>
+<h1>Philip Gerasimov</h1>
+<div class="role">iOS Developer</div>
 
-      <div class="entry">
-        <div class="entry-head">
-          <div>
-            <div class="entry-title">Independent iOS Developer — Personal & Experimental Projects</div>
-            <div class="entry-subtitle">Camera, graphics, product prototyping, system utilities</div>
-          </div>
-          <div class="entry-date">2022 — Present</div>
-        </div>
-        <ul>
-          <li>Build independent iOS and macOS projects focused on camera systems, graphics, API-driven apps, and utility software.</li>
-          <li>Develop experimental camera workflows using AVFoundation, CoreMedia, CoreVideo, and Metal.</li>
-          <li>Implement real-time rendering pipelines and custom visual effects for mobile applications.</li>
-          <li>Design app structure, state handling, networking, and UI for portfolio-grade projects.</li>
-          <li>Use GitHub, portfolio pages, and production-style documentation to present projects publicly.</li>
-        </ul>
-      </div>
+<div class="links">
+GitHub: https://github.com/Yogerasim<br>
+Portfolio: https://yogerasim.github.io/portfolio/<br>
+Telegram: @philip_gerasim<br>
+Email: yogerrasim@yandex.ru
+</div>
 
-      <div class="entry">
-        <div class="entry-head">
-          <div>
-            <div class="entry-title">Technical Specialist</div>
-            <div class="entry-subtitle">Planetarium №1 · Saint Petersburg</div>
-          </div>
-          <div class="entry-date">Jan 2020 — Dec 2021</div>
-        </div>
-        <ul>
-          <li>Worked in the technical laboratory of one of Europe’s largest digital planetariums.</li>
-          <li>Developed IoT devices and control logic for multimedia equipment.</li>
-          <li>Created UI for touch control panels and interactive installations.</li>
-          <li>Built visual scenes and mapping systems in TouchDesigner.</li>
-          <li>Configured networking between devices and multimedia systems.</li>
-        </ul>
-      </div>
+</div>
+</div>
 
-      <div class="entry">
-        <div class="entry-head">
-          <div>
-            <div class="entry-title">iOS Developer</div>
-            <div class="entry-subtitle">TechnoNIKOL · Corporate mobile application</div>
-          </div>
-          <div class="entry-date">Sep 2020 — May 2021</div>
-        </div>
-        <ul>
-          <li>Developed a corporate iOS application from scratch as part of a team.</li>
-          <li>Implemented key screens, business logic, and user flows.</li>
-          <li>Integrated APIs and handled network communication.</li>
-          <li>Prepared the application for App Store release and platform review requirements.</li>
-        </ul>
-      </div>
+<div class="section">
 
-      <div class="entry">
-        <div class="entry-head">
-          <div>
-            <div class="entry-title">iOS Developer</div>
-            <div class="entry-subtitle">British Higher School of Art and Design · Team educational product</div>
-          </div>
-          <div class="entry-date">Jan 2022 — Jul 2022</div>
-        </div>
-        <ul>
-          <li>Worked on a mobile application for an educational organization as part of a team.</li>
-          <li>Integrated graphical and multimedia assets into the product.</li>
-          <li>Worked with Git and team workflow during development and release preparation.</li>
-          <li>Participated in testing, release preparation, and publication to the App Store.</li>
-        </ul>
-      </div>
-    </section>
+<h2>Summary</h2>
 
-    <section class="section">
-      <h2 class="section-title">Selected Projects</h2>
+<p>
+iOS Developer focused on building mobile applications with Swift, UIKit and SwiftUI.
+Interested in camera systems, graphics and interactive applications using Metal and AVFoundation.
+Experience building applications, integrating APIs and publishing projects to the App Store.
+</p>
 
-      <div class="project">
-        <span class="project-name">Lens</span> — experimental camera application built with Swift, UIKit, Metal, AVFoundation, CoreMedia, CoreVideo, and Combine. Focused on real-time video effects, GPU rendering, and custom visual processing pipeline.
-      </div>
+</div>
 
-      <div class="project">
-        <span class="project-name">Trains</span> — railway route search app using Yandex Schedule API. Built with SwiftUI and Combine, with networking, JSON decoding, search flow, and UI rendering.
-      </div>
+<div class="section">
 
-      <div class="project">
-        <span class="project-name">Tracker</span> — habit tracking application built with UIKit, CoreData, and MVVM. Includes persistence, state handling, structured UI flows, and reusable screen logic.
-      </div>
+<h2>Skills</h2>
 
-      <div class="project">
-        <span class="project-name">ImageFeed</span> — image feed application with authentication flow, networking, asynchronous image loading, and production-style iOS UI structure.
-      </div>
+<p>
+Swift · SwiftUI · UIKit · AVFoundation · Metal · CoreData · Combine · REST API · JSON · MVVM · Git · App Store Connect
+</p>
 
-      <div class="project">
-        <span class="project-name">AutoCleaner / AutoCleaner-MemoryEngine</span> — utility and diagnostics projects focused on memory monitoring, cleanup workflows, low-level app behavior, and Swift-based system tooling.
-      </div>
-    </section>
+</div>
 
-    <section class="section">
-      <h2 class="section-title">Education</h2>
-      <div class="entry">
-        <div class="entry-head">
-          <div>
-            <div class="entry-title">Volga State University of Service</div>
-            <div class="entry-subtitle">Industrial Design</div>
-          </div>
-          <div class="entry-date">2018</div>
-        </div>
-      </div>
-    </section>
+<div class="section">
 
-    <section class="section">
-      <h2 class="section-title">Languages</h2>
-      <div class="summary">
-        Russian — Native · English — B2
-      </div>
-    </section>
+<h2>Experience</h2>
 
-    <div class="footer-note">
-      Public projects: github.com/Yogerasim · Portfolio: yogerasim.github.io/portfolio
-    </div>
+<div class="job">
 
-  </main>
+<div class="job-title">Independent iOS Developer</div>
+<div class="date">2023 — Present</div>
+
+<ul>
+<li>Develop personal iOS applications focused on camera systems, graphics and API-driven apps.</li>
+<li>Implement real-time visual effects using Metal and AVFoundation.</li>
+<li>Design mobile architectures and UI using Swift, UIKit and SwiftUI.</li>
+<li>Publish projects on GitHub and portfolio website.</li>
+</ul>
+
+</div>
+
+<div class="job">
+
+<div class="job-title">3D & Interactive Graphics Developer</div>
+<div class="date">2023</div>
+
+<ul>
+<li>Created 3D assets and visual environments for interactive media projects.</li>
+<li>Worked on graphics content for startup and multimedia productions.</li>
+<li>Developed pipelines for real-time visual environments.</li>
+</ul>
+
+</div>
+
+<div class="job">
+
+<div class="job-title">IoT Systems & Multimedia Developer</div>
+<div class="date">2024</div>
+
+<ul>
+<li>Developed control systems for IoT devices and multimedia installations.</li>
+<li>Integrated audio equipment and hardware control systems.</li>
+<li>Built UI interfaces for control panels and installations.</li>
+</ul>
+
+</div>
+
+<div class="job">
+
+<div class="job-title">Swift & iOS Development Training</div>
+<div class="date">2025</div>
+
+<ul>
+<li>Completed intensive training in Swift and iOS architecture.</li>
+<li>Studied networking, concurrency and production mobile workflows.</li>
+<li>Developed multiple portfolio apps including camera and API-based apps.</li>
+</ul>
+
+</div>
+
+</div>
+
+<div class="section">
+
+<h2>Projects</h2>
+
+<ul>
+
+<li><b>Lens</b> — camera application built with Swift, UIKit, Metal and AVFoundation with real-time visual effects.</li>
+
+<li><b>Trains</b> — railway route search application using Yandex Schedule API and SwiftUI.</li>
+
+<li><b>Tracker</b> — habit tracking application built with UIKit, CoreData and MVVM architecture.</li>
+
+<li><b>ImageFeed</b> — networking-based image feed application with async image loading.</li>
+
+<li><b>AutoCleaner</b> — macOS utility built with Swift and SwiftUI for system diagnostics.</li>
+
+</ul>
+
+</div>
+
+</div>
+
 </body>
 </html>
