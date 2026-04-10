@@ -1,163 +1,222 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Филипп Герасимов — iOS Developer</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      line-height: 1.6;
-      color: #111;
-      background: #fff;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Филипп Герасимов — Резюме</title>
+<meta name="description" content="Philip Gerasimov — iOS / macOS Developer. Swift, SwiftUI, UIKit, AVFoundation, Metal, MVVM, REST API.">
 
-    h1, h2 {
-      margin-bottom: 8px;
-    }
+<style>
+body{
+  font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display",Roboto,Arial,sans-serif;
+  margin:0;
+  background:#f5f7fb;
+  color:#111;
+}
 
-    h1 {
-      font-size: 32px;
-    }
+.container{
+  max-width:900px;
+  margin:auto;
+  background:white;
+  padding:40px 48px 48px;
+  box-shadow:0 20px 50px rgba(0,0,0,.08);
+}
 
-    h2 {
-      font-size: 22px;
-      margin-top: 32px;
-      border-bottom: 1px solid #ddd;
-      padding-bottom: 6px;
-    }
+.header{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  margin-bottom:28px;
+  border-bottom:1px solid #eee;
+  padding-bottom:20px;
+}
 
-    .subtitle {
-      font-size: 20px;
-      color: #444;
-      margin-bottom: 16px;
-    }
+.avatar{
+  width:88px;
+  height:88px;
+  border-radius:50%;
+}
 
-    .contacts a {
-      color: #0a58ca;
-      text-decoration: none;
-    }
+h1{
+  margin:0;
+  font-size:32px;
+}
 
-    .contacts a:hover {
-      text-decoration: underline;
-    }
+.role{
+  color:#2563eb;
+  font-weight:600;
+  margin-top:4px;
+}
 
-    .job {
-      margin-bottom: 24px;
-    }
+.links{
+  margin-top:10px;
+  font-size:14px;
+  line-height:1.5;
+}
 
-    .job-title {
-      font-weight: bold;
-      font-size: 18px;
-    }
+.links a{
+  color:#2563eb;
+  text-decoration:none;
+}
 
-    .date {
-      color: #666;
-      margin-bottom: 8px;
-    }
+.section{
+  margin-top:24px;
+}
 
-    ul {
-      margin-top: 8px;
-      padding-left: 20px;
-    }
+.section h2{
+  font-size:18px;
+  border-bottom:2px solid #eee;
+  padding-bottom:6px;
+  margin-bottom:10px;
+}
 
-    .tagline {
-      margin-top: 18px;
-      font-weight: 600;
-      color: #222;
-    }
-  </style>
+p{
+  margin:0;
+  line-height:1.55;
+}
+
+.job{
+  margin-bottom:18px;
+}
+
+.job-title{
+  font-weight:700;
+}
+
+.date{
+  color:#666;
+  font-size:14px;
+  margin:2px 0 6px;
+}
+
+ul{
+  margin:6px 0 0 18px;
+  padding:0;
+}
+
+li{
+  margin:4px 0;
+  line-height:1.45;
+}
+
+.skills{
+  font-size:15px;
+  line-height:1.7;
+}
+
+.tagline{
+  margin-top:8px;
+  font-size:15px;
+  line-height:1.5;
+  color:#1f2937;
+  font-weight:600;
+}
+</style>
 </head>
 <body>
 
-  <h1>Филипп Герасимов</h1>
-  <div class="subtitle">iOS Developer / Intern iOS Developer</div>
+<div class="container">
 
-  <div class="contacts">
-    <div>Email: <a href="mailto:yogerrasim@gmail.com">yogerrasim@gmail.com</a></div>
-    <div>Портфолио: <a href="https://yogerasim.github.io/portfolio/">yogerasim.github.io/portfolio</a></div>
-    <div>LinkedIn: <a href="https://www.linkedin.com/in/philip-gerasim-267a16283/">linkedin.com/in/philip-gerasim-267a16283</a></div>
-    <div>Telegram: <a href="https://t.me/philip_gerasim">@philip_gerasim</a></div>
+  <div class="header">
+    <img class="avatar" src="https://github.com/Yogerasim.png" alt="Philip Gerasimov">
+    <div>
+      <h1>Philip Gerasimov</h1>
+      <div class="role">iOS / macOS Developer</div>
+      <div class="links">
+        Email: <a href="mailto:yogerrasim@gmail.com">yogerrasim@gmail.com</a><br>
+        Portfolio: <a href="https://yogerasim.github.io/portfolio/" target="_blank">https://yogerasim.github.io/portfolio/</a><br>
+        LinkedIn: <a href="https://www.linkedin.com/in/philip-gerasim-267a16283/" target="_blank">https://www.linkedin.com/in/philip-gerasim-267a16283/</a><br>
+        Telegram: <a href="https://t.me/philip_gerasim" target="_blank">@philip_gerasim</a>
+      </div>
+      <div class="tagline">
+        iOS Developer | Swift • SwiftUI • UIKit • AVFoundation • Metal • MVVM • REST API | App Store Publishing | Open to Opportunities
+      </div>
+    </div>
   </div>
 
-  <p class="tagline">
-    iOS Developer | Swift • UIKit • SwiftUI • MVVM • REST API • Git • Клиент-серверные приложения | Стажировка / Junior / Intern
-  </p>
-
-  <h2>О себе</h2>
-  <p>
-    Начинающий iOS-разработчик с практическим опытом разработки приложений на Swift, UIKit и SwiftUI.
-    Имею опыт работы с REST API, Git, архитектурой приложений, UI-разработкой и подготовкой приложений к релизу.
-    Хорошо понимаю базовые принципы ООП, клиент-серверного взаимодействия и стремлюсь расти в продуктовой мобильной разработке.
-  </p>
-
-  <h2>Ключевые навыки</h2>
-  <p>
-    Swift, UIKit, SwiftUI, MVVM, ООП, SOLID, REST API, JSON, URLSession, клиент-серверные приложения,
-    Git, архитектура приложений, работа с UI, базовая многопоточность, App Store Connect, командная разработка.
-  </p>
-
-<h2>Опыт</h2>
-
-  <div class="job">
-    <div class="job-title">Independent iOS Developer</div>
-    <div class="date">2024 — настоящее время</div>
-    <ul>
-      <li>Проектирую пользовательские интерфейсы на UIKit и SwiftUI.</li>
-      <li>Интегрирую REST API, работаю с сетевым слоем и обработкой JSON.</li>
-      <li>Изучаю архитектуру приложений, принципы SOLID и лучшие практики мобильной разработки.</li>
-      <li>Участвовал в реальных коммерческих iOS-проектах.</li>
-      <li>Интегрировал модуль квиза в многомодульное приложение на SwiftUI с архитектурой MVVM.</li>
-      <li>Реализовывал получение и отправку данных через API (GET / POST), работал со Swagger-документацией.</li>
-      <li>Публикую проекты на GitHub и веду собственное <a href="https://yogerasim.github.io/portfolio/" target="_blank">портфолио</a>.</li>
-    </ul>
-  </div><div class="job">
-    <div class="job-title">iOS Developer</div>
-    <div class="date">2022</div>
-    <ul>
-      <li>Участвовал в разработке мобильного приложения для образовательной организации.</li>
-      <li>Работал с Git и командным процессом разработки.</li>
-      <li>Участвовал в интеграции экранов, тестировании и подготовке релизных сборок.</li>
-    </ul>
+  <div class="section">
+    <h2>Summary</h2>
+    <p>
+      iOS / macOS Developer with hands-on experience in Swift, UIKit, SwiftUI, REST API integration, mobile UI development, and App Store release workflows. Strong interest in camera-based applications, AVFoundation, Metal, graphics-driven products, and clean mobile architecture.
+    </p>
   </div>
 
-  <div class="job">
-    <div class="job-title">iOS Developer — TechnoNICOL</div>
-    <div class="date">2020 — 2021</div>
-    <ul>
-      <li>Разрабатывал корпоративное мобильное приложение с интеграцией REST API.</li>
-      <li>Реализовывал экраны и бизнес-логику в командной среде.</li>
-      <li>Участвовал в процессе подготовки приложения к релизу.</li>
-    </ul>
+  <div class="section">
+    <h2>Key Skills</h2>
+    <div class="skills">
+      Swift, UIKit, SwiftUI, MVVM, CoreData, Combine, REST API, JSON, URLSession, AVFoundation, CoreMedia, CoreVideo, Metal, Git, App Store Connect, modular architecture, multi-module iOS projects, feature development, release workflows, product development for iOS and macOS.
+    </div>
   </div>
 
-  <h2>Избранные проекты</h2>
-  <p>
-    Избранные проекты доступны в портфолио:
-    <a href="https://yogerasim.github.io/portfolio/">yogerasim.github.io/portfolio</a>
-  </p>
+  <div class="section">
+    <h2>Experience</h2>
 
-  <h2>Образование</h2>
-  <p>
-    Поволжский государственный университет сервиса<br />
-    Промышленный дизайн<br />
-    2018
-  </p>
+    <div class="job">
+      <div class="job-title">iOS / macOS Developer — Project and Product Development</div>
+      <div class="date">2023 — 2026</div>
+      <ul>
+        <li>Developed iOS and macOS functionality in Swift for multiple commercial products.</li>
+        <li>Implemented user flows, screens, internal logic, and networking.</li>
+        <li>Designed and evolved application architecture with clear separation of responsibilities between layers.</li>
+        <li>Worked with UIKit and SwiftUI depending on product requirements and architectural context.</li>
+        <li>Integrated REST APIs, processed data, and connected the networking layer to the UI.</li>
+        <li>Developed features within a multi-module architecture.</li>
+        <li>Prepared builds, supported release cycles, and maintained applications through publication.</li>
+        <li>Implemented solutions related to camera workflows, multimedia processing, graphics, and Apple platform capabilities.</li>
+      </ul>
+      <p><strong>Key result:</strong> Built strong practical expertise in Swift development and commercial product engineering for iOS / macOS, from architecture and UI to integrations, performance, and release workflows.</p>
+    </div>
 
-  <p>
-    Яндекс Практикум<br />
-    iOS-разработчик (расширенный курс)<br />
-    2025 — 2026
-  </p>
+    <div class="job">
+      <div class="job-title">iOS Developer</div>
+      <div class="date">2022</div>
+      <ul>
+        <li>Developed a mobile application as part of a team for an educational organization.</li>
+        <li>Implemented product functionality and contributed to UI and screen flow integration.</li>
+        <li>Worked in a team Git workflow, participated in testing, and prepared release builds.</li>
+        <li>Took part in the final release and publication cycle.</li>
+      </ul>
+      <p><strong>Key result:</strong> Gained hands-on experience in team-based iOS development and product delivery.</p>
+    </div>
 
-  <h2>Языки</h2>
-  <p>
-    Русский — родной<br />
-    Английский — B2
-  </p>
+    <div class="job">
+      <div class="job-title">iOS Developer — TechnoNICOL</div>
+      <div class="date">2020 — 2021</div>
+      <ul>
+        <li>Implemented key screens, user flows, and business logic.</li>
+        <li>Integrated APIs and networking into the application.</li>
+        <li>Worked within App Store requirements and a corporate product environment.</li>
+      </ul>
+      <p><strong>Key result:</strong> Gained experience in commercial mobile development within a team and worked through the full preparation cycle of an iOS application for release.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Selected Projects</h2>
+    <p>
+      Selected projects are available in my portfolio:<br>
+      <a href="https://yogerasim.github.io/portfolio/" target="_blank">https://yogerasim.github.io/portfolio/</a>
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Education</h2>
+    <p>
+      Volga State University of Service<br>
+      Industrial Design<br>
+      2018
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Languages</h2>
+    <p>
+      Russian — Native<br>
+      English — B2
+    </p>
+  </div>
+
+</div>
 
 </body>
 </html>
