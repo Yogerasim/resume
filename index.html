@@ -112,10 +112,47 @@ li{
   font-weight:600;
 }
 </style>
+
+<style>
+.lang-switch{
+  position:fixed;
+  top:20px;
+  right:20px;
+  z-index:9999;
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  padding:6px;
+  border-radius:999px;
+  background:rgba(255,255,255,0.88);
+  border:1px solid rgba(15,23,42,0.10);
+  box-shadow:0 10px 30px rgba(15,23,42,0.08);
+  backdrop-filter:blur(12px);
+}
+.lang-switch a{
+  text-decoration:none;
+  font-size:13px;
+  font-weight:600;
+  padding:8px 12px;
+  border-radius:999px;
+  color:#0f172a;
+}
+.lang-switch a.active{
+  background:#0f172a;
+  color:#fff;
+}
+</style>
+
 </head>
 <body>
-<nav class="lang-switch" style="padding:20px 0;"><a href="/resume/">EN</a> | <a href="/resume/ru/">RU</a></nav>
-<nav style="padding:20px 0;"><a href="/resume/">EN</a> | <a href="/resume/ru/">RU</a></nav>
+
+<nav class="lang-switch" aria-label="Language switcher">
+  <a href="/resume/" class="active">EN</a>
+  <a href="/resume/ru/">RU</a>
+</nav>
+
+
+
 
 <div class="container">
 
