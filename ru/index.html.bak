@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Филипп Герасимов — iOS Developer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      line-height: 1.6;
+      color: #111;
+      background: #fff;
+    }
+
+    h1, h2 {
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    h2 {
+      font-size: 22px;
+      margin-top: 32px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 6px;
+    }
+
+    .subtitle {
+      font-size: 20px;
+      color: #444;
+      margin-bottom: 16px;
+    }
+
+    .contacts a {
+      color: #0a58ca;
+      text-decoration: none;
+    }
+
+    .contacts a:hover {
+      text-decoration: underline;
+    }
+
+    .job {
+      margin-bottom: 24px;
+    }
+
+    .job-title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .date {
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    ul {
+      margin-top: 8px;
+      padding-left: 20px;
+    }
+
+    .tagline {
+      margin-top: 18px;
+      font-weight: 600;
+      color: #222;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Филипп Герасимов</h1>
+  <div class="subtitle">iOS Developer / Intern iOS Developer</div>
+
+  <div class="contacts">
+    <div>Email: <a href="mailto:yogerrasim@gmail.com">yogerrasim@gmail.com</a></div>
+    <div>Портфолио: <a href="https://yogerasim.github.io/portfolio/">yogerasim.github.io/portfolio</a></div>
+    <div>LinkedIn: <a href="https://www.linkedin.com/in/philip-gerasim-267a16283/">linkedin.com/in/philip-gerasim-267a16283</a></div>
+    <div>Telegram: <a href="https://t.me/philip_gerasim">@philip_gerasim</a></div>
+  </div>
+
+  <p class="tagline">
+    iOS Developer | Swift • UIKit • SwiftUI • MVVM • REST API • Git • Клиент-серверные приложения | Стажировка / Junior / Intern
+  </p>
+
+  <h2>О себе</h2>
+  <p>
+    Начинающий iOS-разработчик с практическим опытом разработки приложений на Swift, UIKit и SwiftUI.
+    Имею опыт работы с REST API, Git, архитектурой приложений, UI-разработкой и подготовкой приложений к релизу.
+    Хорошо понимаю базовые принципы ООП, клиент-серверного взаимодействия и стремлюсь расти в продуктовой мобильной разработке.
+  </p>
+
+  <h2>Ключевые навыки</h2>
+  <p>
+    Swift, UIKit, SwiftUI, MVVM, ООП, SOLID, REST API, JSON, URLSession, клиент-серверные приложения,
+    Git, архитектура приложений, работа с UI, базовая многопоточность, App Store Connect, командная разработка.
+  </p>
+
+<h2>Опыт</h2>
+
+  <div class="job">
+    <div class="job-title">Independent iOS Developer</div>
+    <div class="date">2024 — настоящее время</div>
+    <ul>
+      <li>Проектирую пользовательские интерфейсы на UIKit и SwiftUI.</li>
+      <li>Интегрирую REST API, работаю с сетевым слоем и обработкой JSON.</li>
+      <li>Изучаю архитектуру приложений, принципы SOLID и лучшие практики мобильной разработки.</li>
+      <li>Участвовал в реальных коммерческих iOS-проектах.</li>
+      <li>Интегрировал модуль квиза в многомодульное приложение на SwiftUI с архитектурой MVVM.</li>
+      <li>Реализовывал получение и отправку данных через API (GET / POST), работал со Swagger-документацией.</li>
+      <li>Публикую проекты на GitHub и веду собственное портфолио.</li>
+    </ul>
+  </div><div class="job">
+    <div class="job-title">iOS Developer</div>
+    <div class="date">2022</div>
+    <ul>
+      <li>Участвовал в разработке мобильного приложения для образовательной организации.</li>
+      <li>Работал с Git и командным процессом разработки.</li>
+      <li>Участвовал в интеграции экранов, тестировании и подготовке релизных сборок.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-title">iOS Developer — TechnoNICOL</div>
+    <div class="date">2020 — 2021</div>
+    <ul>
+      <li>Разрабатывал корпоративное мобильное приложение с интеграцией REST API.</li>
+      <li>Реализовывал экраны и бизнес-логику в командной среде.</li>
+      <li>Участвовал в процессе подготовки приложения к релизу.</li>
+    </ul>
+  </div>
+
+  <h2>Избранные проекты</h2>
+  <p>
+    Избранные проекты доступны в портфолио:
+    <a href="https://yogerasim.github.io/portfolio/">yogerasim.github.io/portfolio</a>
+  </p>
+
+  <h2>Образование</h2>
+  <p>
+    Поволжский государственный университет сервиса<br />
+    Промышленный дизайн<br />
+    2018
+  </p>
+
+  <p>
+    Яндекс Практикум<br />
+    iOS-разработчик (расширенный курс)<br />
+    2025 — 2026
+  </p>
+
+  <h2>Языки</h2>
+  <p>
+    Русский — родной<br />
+    Английский — B2
+  </p>
+
+</body>
+</html>
